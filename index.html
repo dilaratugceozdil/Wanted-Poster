@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanted-Poster</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="shortcut icon" href="assets/weapon-favicon.png" type="image/x-icon">
+</head>
+<!-- <iframe class="allow" src="assets/western.mp3" allow="autoplay loop"></iframe> -->
+<body>
+
+    <div id="myContanier" class="contanier">
+        <audio id="myMuzik" autoplay loop>
+            <source src="assets/western.mp3" type="audio/mp3">
+            Tarayıcınız audio elementini desteklemiyor.
+          </audio>
+
+        <section>
+            <h1 class="baslik">WANTED</h1>
+            <p class="subheading">Dead or Alive</p>
+            <img class="mugshot" src="assets/mugshot.png" alt="mugshot">
+            <p class="name">Billy the Kid</p>
+            <p class="description">Armed & very dangerous</p>
+            <h2 class="reward">Reward</h2>
+            <div id="price">$50.000</div>
+        </section>
+    </div>
+
+    <div class="button-contanier">
+        <button id="bustedButton" class="outside-button" type="button">BUSTED</button>
+    </div>
+
+    <audio id="buttonMuzik">
+        <source src="assets/bullet.mp3" type="audio/mp3">
+        Tarayıcınız audio elementini desteklemiyor.
+    </audio>
+
+    <div id="redLetter" class="letter">X</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

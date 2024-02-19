@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #291200;
+}
+
+body {
+    background-image: url(assets/wood.jpg);
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+
+#muzik {
+    display: none;
+}
+
+.contanier {
+    background-image: url(assets/parchment.jpg);
+    width: 480px;
+    height: 620px;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 4px 8px 3px #000000;
+    position: relative;
+    /* filter: grayscale(100%); */
+
+}
+
+
+.letter {
+    display: none;
+    position: absolute;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    font-size: 515px;
+    z-index: 1;
+    color: #fd020295;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 57px;
+    animation-name: letterGif;
+    animation-duration: 0.4s;
+    animation-delay: 0.3s;
+}
+
+@keyframes letterGif {
+    from {
+
+        transform: scale(1);
+    }
+
+    to {
+
+        transform: scale(1.2);
+
+    }
+}
+
+.baslik {
+    font-family: 'Ewert', serif;
+    font-size: 44px;
+}
+
+.subheading {
+    font-family: 'Ultra', serif;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.mugshot {
+    width: 300px;
+    height: 325px;
+    border: 2px solid #291200;
+    padding: 10px;
+    filter: sepia(50%);
+}
+
+.name {
+    font-size: 33px;
+    font-weight: bold;
+    font-family: 'Ultra', serif;
+}
+
+.description {
+    font-style: italic;
+    font-family: 'Ultra', serif;
+    font-size: 15px;
+}
+
+
+.reward {
+    font-family: 'Ultra', serif;
+    font-size: 25px;
+}
+
+#price {
+    font-family: 'Ultra', serif;
+    font-size: 49px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+.button-contanier .outside-button {
+    background-color: #bd9f68;
+    font-family: 'Ewert', serif;
+    cursor: pointer;
+    font-size: 20pt;
+    width: 150px;
+    height: 50px;
+    box-shadow: 2px 4px 8px 3px #000000;
+    border: none;
+    margin-top: 10px;
+
+}
+
+.button-contanier .outside-button:hover {
+    background-color: #291200;
+    color: #bd9f68;
+    text-decoration: line-through 3px;
+}
+
+@media screen and (max-width:600px) {
+    .contanier {
+        width: 90%;
+    }
+
+    .mugshot {
+        width: 80%;
+    }
+
+    .baslik {
+        font-size: 28px;
+    }
+
+    .subheading {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .reward {
+        font-size: 20px;
+    }
+
+    #price {
+        font-size: 35px;
+    }
+
+    .letter {
+        font-size: 450px;
+        padding-bottom: 60px;
+    }
+}
